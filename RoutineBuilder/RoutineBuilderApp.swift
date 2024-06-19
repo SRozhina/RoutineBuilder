@@ -5,8 +5,8 @@
 //  Created by Sofia Vykhrystyuk on 19/06/2024.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
 struct RoutineBuilderApp: App {
