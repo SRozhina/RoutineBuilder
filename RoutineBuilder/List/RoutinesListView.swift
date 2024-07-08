@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RoutinesListView: View {
-    @Binding var items: [Item]
+    @Binding var itemsGroups: [ItemsGroup]
 
     private static let itemsSpacing: CGFloat = 20
 
@@ -22,12 +22,8 @@ struct RoutinesListView: View {
             Spacer().padding(5)
 
             LazyVGrid(columns: columns, spacing: Self.itemsSpacing) {
-                ForEach(testItems) { item in
-                    NavigationLink {
-                        RoutineDetailsView(item: item)
-                    } label: {
-                        RoutineItemView(item: item)
-                    }
+                ForEach($itemsGroups) { group in
+                    RoutinesSectionView(itemsGroup: group)
                 }
             }
             .padding([.horizontal, .bottom], Self.itemsSpacing)
@@ -38,5 +34,5 @@ struct RoutinesListView: View {
 }
 
 #Preview {
-    RoutinesListView(items: .constant(testItems))
+    RoutinesListView(itemsGroups: .constant(testItemGroups))
 }

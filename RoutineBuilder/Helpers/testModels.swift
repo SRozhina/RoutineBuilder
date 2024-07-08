@@ -15,3 +15,9 @@ let testItems = [
     Item(title: "Item 7"),
     Item(title: "Item 8")
 ]
+
+let testItemGroups = [
+    ItemsGroup(items: testItems, header: .init(title: "Section 1", isExpanded: true)),
+    ItemsGroup(items: testItems, header: .init(title: "Section 2", isExpanded: false)),
+    ItemsGroup(items: testItems, header: .init(title: "Section 3", isExpanded: true))
+]

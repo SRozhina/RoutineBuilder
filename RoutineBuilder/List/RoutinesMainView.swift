@@ -14,7 +14,7 @@ struct RoutinesMainView: View {
 
     private let listCornerRadius: CGFloat = 30
 
-    @State private var staticItems = testItems
+    @State private var staticItems = testItemGroups
 
     var body: some View {
         NavigationView {
@@ -26,11 +26,11 @@ struct RoutinesMainView: View {
                     HStack {
                         Text("routines")
                             .font(.title)
-                            .fontWeight(.semibold)
+                            .fontWeight(.medium)
                             .padding(.vertical, 20)
                     }
 
-                    RoutinesListView(items: $staticItems)
+                    RoutinesListView(itemsGroups: $staticItems)
                         .clipShape(.rect(topLeadingRadius: listCornerRadius, topTrailingRadius: listCornerRadius))
                         .shadow(color: .black.opacity(0.2), radius: 10)
                 }
