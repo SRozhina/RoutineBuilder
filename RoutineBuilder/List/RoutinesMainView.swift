@@ -10,7 +10,7 @@ import SwiftUI
 
 struct RoutinesMainView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @Query private var items: [Routine]
 
     private let listCornerRadius: CGFloat = 30
 
@@ -30,7 +30,7 @@ struct RoutinesMainView: View {
                             .padding(.vertical, 20)
                     }
 
-                    RoutinesListView(itemsGroups: $staticItems)
+                    RoutinesListView(routinesGroups: $staticItems)
                         .clipShape(.rect(topLeadingRadius: listCornerRadius, topTrailingRadius: listCornerRadius))
                         .shadow(color: .black.opacity(0.2), radius: 10)
                 }
@@ -42,5 +42,5 @@ struct RoutinesMainView: View {
 
 #Preview {
     RoutinesMainView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: Routine.self, inMemory: true)
 }
