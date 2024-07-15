@@ -63,8 +63,8 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				HeaderViewModel.swift,
-				Item.swift,
-				ItemsGroup.swift,
+				Routine.swift,
+				RoutinesGroup.swift,
 			);
 			target = A7BC55FC2C233BC600B8ECEE /* RoutineBuilder */;
 		};

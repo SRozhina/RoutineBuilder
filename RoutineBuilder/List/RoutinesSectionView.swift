@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct RoutinesSectionView: View {
-    @Binding var itemsGroup: ItemsGroup
+    @Binding var routines: RoutinesGroup
 
     var body: some View {
-        Section(isExpanded: $itemsGroup.header.isExpanded) {
-            ForEach(itemsGroup.items) { item in
+        Section(isExpanded: $routines.header.isExpanded) {
+            ForEach(routines.routines) { routine in
                 NavigationLink {
-                    RoutineDetailsView(item: item)
+                    RoutineDetailsView(routine: routine)
                 } label: {
-                    RoutineItemView(item: item)
+                    RoutineItemView(routine: routine)
                 }
             }
         } header: {
-            RoutinesSectionHeaderView(headerViewModel: $itemsGroup.header)
+            RoutinesSectionHeaderView(headerViewModel: $routines.header)
         }
     }
 }

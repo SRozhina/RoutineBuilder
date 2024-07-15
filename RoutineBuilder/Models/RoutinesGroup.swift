@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct ItemsGroup: Identifiable {
+struct RoutinesGroup: Identifiable {
     let id = UUID().uuidString
-    var items: [Item]
+    var routines: [Routine]
     var header: HeaderViewModel
 }

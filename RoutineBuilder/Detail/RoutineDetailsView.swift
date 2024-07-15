@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct RoutineDetailsView: View {
-    private let item: Item
+    private let routine: Routine
 
-    init(item: Item) {
-        self.item = item
+    init(routine: Routine) {
+        self.routine = routine
     }
 
     var body: some View {
-        Text(item.title)
+        Text(routine.title)
     }
 }
 
 #Preview {
-    RoutineDetailsView(item: testItems[0])
+    RoutineDetailsView(routine: testItems[0])
 }
