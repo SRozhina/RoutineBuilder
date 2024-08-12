@@ -22,7 +22,7 @@ struct RoutinesListView: View {
             Spacer().padding(5)
 
             LazyVGrid(columns: columns, spacing: Self.itemsSpacing) {
-                ForEach(testItems) { item in
+                ForEach(items) { item in
                     NavigationLink {
                         RoutineDetailsView(item: item)
                     } label: {
