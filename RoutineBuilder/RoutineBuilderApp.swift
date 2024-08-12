@@ -25,7 +25,7 @@ struct RoutineBuilderApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RoutinesMainView()
         }
         .modelContainer(sharedModelContainer)
     }
