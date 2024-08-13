@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		A76964682C2344A900D5CD2D /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = A76964672C2344A900D5CD2D /* .swiftlint.yml */; };
 		A7BC56012C233BC600B8ECEE /* RoutineBuilderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BC56002C233BC600B8ECEE /* RoutineBuilderApp.swift */; };
+		A7BC56032C233BC600B8ECEE /* RoutinesMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BC56022C233BC600B8ECEE /* RoutinesMainView.swift */; };
 		A7BC56072C233BC700B8ECEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7BC56062C233BC700B8ECEE /* Assets.xcassets */; };
 		A7BC560A2C233BC700B8ECEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7BC56092C233BC700B8ECEE /* Preview Assets.xcassets */; };
 		A7BC56142C233BC700B8ECEE /* RoutineBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BC56132C233BC700B8ECEE /* RoutineBuilderTests.swift */; };
 		A7BC561E2C233BC700B8ECEE /* RoutineBuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BC561D2C233BC700B8ECEE /* RoutineBuilderUITests.swift */; };
 		A7E2C6592C35DF9D00BED30F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A7E2C6582C35DF9D00BED30F /* Localizable.xcstrings */; };
+		A7E2C6622C37106A00BED30F /* RoutinesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C6612C37106A00BED30F /* RoutinesListView.swift */; };
+		A7E2C6642C3710DE00BED30F /* RoutineItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C6632C3710DE00BED30F /* RoutineItemView.swift */; };
+		A7E2C6662C37111600BED30F /* RoutineDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C6652C37111600BED30F /* RoutineDetailsView.swift */; };
+		A7E2C6742C3C620A00BED30F /* RoutinesSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C6732C3C620800BED30F /* RoutinesSectionView.swift */; };
+		A7E2C6762C3C622F00BED30F /* RoutinesSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2C6752C3C622D00BED30F /* RoutinesSectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,7 @@
 		A76964672C2344A900D5CD2D /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A7BC55FD2C233BC600B8ECEE /* RoutineBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutineBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BC56002C233BC600B8ECEE /* RoutineBuilderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineBuilderApp.swift; sourceTree = "<group>"; };
+		A7BC56022C233BC600B8ECEE /* RoutinesMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesMainView.swift; sourceTree = "<group>"; };
 		A7BC56062C233BC700B8ECEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7BC56092C233BC700B8ECEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A7BC560F2C233BC700B8ECEE /* RoutineBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutineBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,23 +51,20 @@
 		A7BC56192C233BC700B8ECEE /* RoutineBuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutineBuilderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7BC561D2C233BC700B8ECEE /* RoutineBuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineBuilderUITests.swift; sourceTree = "<group>"; };
 		A7E2C6582C35DF9D00BED30F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A7E2C6612C37106A00BED30F /* RoutinesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesListView.swift; sourceTree = "<group>"; };
+		A7E2C6632C3710DE00BED30F /* RoutineItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineItemView.swift; sourceTree = "<group>"; };
+		A7E2C6652C37111600BED30F /* RoutineDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailsView.swift; sourceTree = "<group>"; };
+		A7E2C6732C3C620800BED30F /* RoutinesSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesSectionView.swift; sourceTree = "<group>"; };
+		A7E2C6752C3C622D00BED30F /* RoutinesSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesSectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A7E2C65B2C37103200BED30F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				RoutineDetailsView.swift,
-				RoutineItemView.swift,
-				RoutinesListView.swift,
-				RoutinesMainView.swift,
-			);
-			target = A7BC55FC2C233BC600B8ECEE /* RoutineBuilder */;
-		};
 		A7E2C65D2C37103E00BED30F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Item.swift,
+				HeaderViewModel.swift,
+				Routine.swift,
+				RoutinesGroup.swift,
 			);
 			target = A7BC55FC2C233BC600B8ECEE /* RoutineBuilder */;
 		};
@@ -75,7 +79,6 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A7E2C65A2C37102C00BED30F /* Main */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A7E2C65B2C37103200BED30F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Main; sourceTree = "<group>"; };
 		A7E2C65C2C37103900BED30F /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A7E2C65D2C37103E00BED30F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
 		A7E2C6672C37114600BED30F /* Helpers */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A7E2C66A2C3711AB00BED30F /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Helpers; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -129,9 +132,10 @@
 		A7BC55FF2C233BC600B8ECEE /* RoutineBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				A7E2C6722C3C61E300BED30F /* Detail */,
+				A7E2C6712C3C61C300BED30F /* List */,
 				A7E2C6672C37114600BED30F /* Helpers */,
 				A7E2C65C2C37103900BED30F /* Models */,
-				A7E2C65A2C37102C00BED30F /* Main */,
 				A7BC56002C233BC600B8ECEE /* RoutineBuilderApp.swift */,
 				A7BC56062C233BC700B8ECEE /* Assets.xcassets */,
 				A7BC56082C233BC700B8ECEE /* Preview Content */,
@@ -162,6 +166,26 @@
 				A7BC561D2C233BC700B8ECEE /* RoutineBuilderUITests.swift */,
 			);
 			path = RoutineBuilderUITests;
+			sourceTree = "<group>";
+		};
+		A7E2C6712C3C61C300BED30F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A7E2C6752C3C622D00BED30F /* RoutinesSectionHeaderView.swift */,
+				A7E2C6732C3C620800BED30F /* RoutinesSectionView.swift */,
+				A7BC56022C233BC600B8ECEE /* RoutinesMainView.swift */,
+				A7E2C6632C3710DE00BED30F /* RoutineItemView.swift */,
+				A7E2C6612C37106A00BED30F /* RoutinesListView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A7E2C6722C3C61E300BED30F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A7E2C6652C37111600BED30F /* RoutineDetailsView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +326,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BC56032C233BC600B8ECEE /* RoutinesMainView.swift in Sources */,
+				A7E2C6622C37106A00BED30F /* RoutinesListView.swift in Sources */,
+				A7E2C6642C3710DE00BED30F /* RoutineItemView.swift in Sources */,
+				A7E2C6762C3C622F00BED30F /* RoutinesSectionHeaderView.swift in Sources */,
+				A7E2C6662C37111600BED30F /* RoutineDetailsView.swift in Sources */,
 				A7BC56012C233BC600B8ECEE /* RoutineBuilderApp.swift in Sources */,
+				A7E2C6742C3C620A00BED30F /* RoutinesSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
