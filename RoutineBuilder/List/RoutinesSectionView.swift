@@ -20,7 +20,7 @@ struct RoutinesSectionView: View {
                 } label: {
                     RoutineItemView(routine: routine)
                 }
-                .matchedTransitionSource(id: routine, in: transitionNamespace)
+                .matchedTransitionSource(id: routine.id, in: transitionNamespace)
             }
         } header: {
             RoutinesSectionHeaderView(headerViewModel: $routines.header)
@@ -29,7 +29,7 @@ struct RoutinesSectionView: View {
             NavigationStack {
                 RoutineDetailsView(routine: routine)
             }
-            .navigationTransition(.zoom(sourceID: routine, in: transitionNamespace))
+            .navigationTransition(.zoom(sourceID: routine.id, in: transitionNamespace))
         }
     }
 }
