@@ -44,7 +44,6 @@ struct RoutineItemView: View {
         .aspectRatio(1.0, contentMode: .fit)
         .background(routine.background.color)
         .clipShape(.rect(cornerRadius: 20))
-        .shadow(color: .black.opacity(0.2), radius: 3, x: 3, y: 3)
     }
 }
 

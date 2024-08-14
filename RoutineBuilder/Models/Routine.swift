@@ -11,11 +11,11 @@ import SwiftUI
 
 @Model
 final class Routine: Identifiable {
-    let id = UUID()
-    let title: String
-    let steps: [String]
-    let startTime: String
-    let background: BackgroundColor
+    var id = UUID()
+    var title: String
+    var steps: [String]
+    var startTime: String
+    var background: BackgroundColor
 
     var totalTime: String {
         "1:12h"
