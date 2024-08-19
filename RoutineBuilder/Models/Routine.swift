@@ -15,7 +15,6 @@ final class Routine: Identifiable {
     var title: String
     var steps: [String]
     var startTime: String
-    var background: BackgroundColor
 
     var totalTime: String {
         "1:12h"
@@ -25,6 +24,5 @@ final class Routine: Identifiable {
         self.title = title
         self.steps = steps
         self.startTime = startTime
-        self.background = BackgroundColor.allCases.randomElement()!
     }
 }

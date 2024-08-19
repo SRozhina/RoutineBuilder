@@ -17,24 +17,22 @@ struct RoutinesMainView: View {
     @State private var staticItems = testItemGroups
 
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color.basicBackground
-                    .ignoresSafeArea(.all, edges: .top)
+        NavigationStack {
+            ZStack(alignment: .topLeading) {
+                RoutinesListView(routinesGroups: $staticItems)
+                    .ignoresSafeArea(.all, edges: .vertical)
 
-                VStack(spacing: 0) {
-                    HStack {
-                        Text("routines")
-                            .font(.title)
-                            .fontWeight(.medium)
-                            .padding(.vertical, 20)
-                    }
+                BlurView(blurEffectStyle: .regular)
+                    .frame(height: 120)
+                    .ignoresSafeArea(.all, edges: .vertical)
 
-                    RoutinesListView(routinesGroups: $staticItems)
-                        .clipShape(.rect(topLeadingRadius: listCornerRadius, topTrailingRadius: listCornerRadius))
-                        .shadow(color: .black.opacity(0.2), radius: 10)
+                HStack {
+                    Text("routines")
+                        .font(.title)
+                        .fontWeight(.medium)
+                        .padding([.bottom, .leading], 20)
+                        .padding(.top, 10)
                 }
-                .ignoresSafeArea(.all, edges: .bottom)
             }
         }
     }
