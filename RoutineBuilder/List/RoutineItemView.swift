@@ -37,13 +37,19 @@ struct RoutineItemView: View {
                 Text(routine.steps[0])
                     .font(.footnote)
             }
+            .foregroundStyle(Color.primary)
             .padding()
-            .foregroundStyle(.black)
         }
         .frame(minWidth: 100, maxWidth: 300, maxHeight: .infinity)
         .aspectRatio(1.0, contentMode: .fit)
-        .background(routine.background.color)
-        .clipShape(.rect(cornerRadius: 20))
+        .background(.background.quaternary)
+        .clipShape(
+            RoundedRectangle(cornerRadius: 20)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(.gray.secondary, lineWidth: 2)
+        )
     }
 }
 

@@ -71,8 +71,8 @@
 		A7E2C66A2C3711AB00BED30F /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"Color+extensions.swift",
 				testModels.swift,
+				View/BlurView.swift,
 			);
 			target = A7BC55FC2C233BC600B8ECEE /* RoutineBuilder */;
 		};

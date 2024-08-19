@@ -18,19 +18,16 @@ struct RoutinesListView: View {
     ]
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                Spacer().padding(5)
-                
-                LazyVGrid(columns: columns, spacing: Self.itemsSpacing) {
-                    ForEach($routinesGroups) { group in
-                        RoutinesSectionView(routines: group)
-                    }
+        ScrollView {
+            Spacer().padding(60)
+            
+            LazyVGrid(columns: columns, spacing: Self.itemsSpacing) {
+                ForEach($routinesGroups) { group in
+                    RoutinesSectionView(routines: group)
                 }
-                .padding([.horizontal, .bottom], Self.itemsSpacing)
-                Spacer()
             }
-            .background(.background.secondary)
+            .padding([.horizontal, .bottom], Self.itemsSpacing)
+            Spacer()
         }
     }
 }
